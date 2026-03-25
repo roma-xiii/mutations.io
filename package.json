@@ -1,0 +1,31 @@
+{
+  "name": "mutations.io",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"apps/**/*.{ts,tsx,md}\" \"packages/**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types",
+    "gen:ui": "cd packages/ui && npm run generate:component"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^2.8.17",
+    "prettier": "^3.7.4",
+    "sass": "^1.98.0",
+    "turbo": "^2.8.17",
+    "typescript": "5.9.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@11.6.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "postcss-preset-mantine": "^1.18.0",
+    "postcss-simple-vars": "^7.0.1"
+  }
+}

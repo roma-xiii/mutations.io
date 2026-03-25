@@ -1,0 +1,12 @@
+{
+  "name": "@repo/typescript-config",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "check-types": "node --eval \"process.exit(0)\""
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
