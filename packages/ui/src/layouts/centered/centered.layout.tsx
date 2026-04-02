@@ -4,13 +4,16 @@ import React from 'react';
 import { AppShell, Flex } from '@mantine/core';
 
 import type { CenteredLayoutProps } from './centered.props';
+// import { LogoBrick } from '../../bricks';
 
 export const CenteredLayout: React.FC<CenteredLayoutProps> = ({ children }) => {
   return (
-    <AppShell padding="md" header={{ height: 60 }}>
-      <AppShell.Header>
-        <div>Logo</div>
-      </AppShell.Header>
+    <AppShell padding="md">
+      {/* <AppShell.Header>
+        <Flex align="center" h={60} ml="lg">
+          <LogoBrick />
+        </Flex>
+      </AppShell.Header> */}
 
       <AppShell.Main>
         <Flex
@@ -21,7 +24,7 @@ export const CenteredLayout: React.FC<CenteredLayoutProps> = ({ children }) => {
           direction="row"
           wrap="wrap"
         >
-          <div>{children}</div>
+          {children}
         </Flex>
       </AppShell.Main>
     </AppShell>

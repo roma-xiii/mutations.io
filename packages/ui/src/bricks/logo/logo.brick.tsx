@@ -1,0 +1,21 @@
+import React from 'react';
+import type { LogoBrickProps } from './logo.props';
+
+export const LogoBrick: React.FC<LogoBrickProps> = ({}) => {
+  return (
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 30 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      stroke="rgb(201, 201, 201)"
+    >
+      <path d="M29 1H1V29L29 29V1Z" stroke-width="2" />
+      <path
+        d="M1 1L7.63158 7.63158M29 29L22.3684 22.3684M1 29L7.63158 22.3684M29 1L22.3684 7.63158M7.63158 7.63158V22.3684M7.63158 7.63158L22.3684 22.3684M7.63158 7.63158L15 1M7.63158 22.3684L22.3684 7.63158M22.3684 7.63158V22.3684M22.3684 22.3684L15 29"
+        stroke-width="2"
+      />
+    </svg>
+  );
+};

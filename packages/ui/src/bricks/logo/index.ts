@@ -1,0 +1,1 @@
+export { LogoBrick } from "./logo.brick";

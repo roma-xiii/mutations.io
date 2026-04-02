@@ -1,10 +1,10 @@
-import { Button } from '@mantine/core';
+import { AuthFormWidget } from '@/src/widgets/auth-form';
 import { CenteredLayout } from '@repo/ui';
 
 export default function SigninPage(): React.JSX.Element {
   return (
     <CenteredLayout>
-      <Button>Next link button</Button>
+      <AuthFormWidget />
     </CenteredLayout>
   );
 }
